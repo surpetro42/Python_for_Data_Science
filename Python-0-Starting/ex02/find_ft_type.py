@@ -7,10 +7,8 @@ def all_thing_is_obj(object: any) -> int:
         print(f"Set : {type(object)}")
     elif type(object) == dict:
         print(f"Dict : {type(object)}")
-    elif object == "Brian":
-        print(f"Brian is in the kitchen : {type(object)}")
-    elif object == "Toto":
-        print(f"Toto is in the kitchen : {type(object)}")
+    elif type(object) == str:
+        print(f"{object} is in the kitchen : {type(object)}")
     else:
-        print("Type not found")
+        print("Type not Found")
     return 42

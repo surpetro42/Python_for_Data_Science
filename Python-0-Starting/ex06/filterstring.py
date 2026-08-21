@@ -16,7 +16,6 @@ def main():
         print("AssertionError: the arguments are bad")
         exit()
     print(list(ft_filter(lambda x: len(x) > n, string)))
-    # print(res)
 
 
 if __name__ == "__main__":
