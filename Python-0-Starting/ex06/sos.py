@@ -27,7 +27,6 @@ def encoding(string, morse):
 
 def valid_input(s):
     if all(c.isalnum() or c == " " for c in s):
-        print(s)
         return True
     return False
 
