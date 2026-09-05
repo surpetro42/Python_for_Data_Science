@@ -18,6 +18,7 @@ morse = {
 
 
 def encoding(string, morse):
+    """Encode a string into Morse code and print the result."""
     string = string.upper()
     morse_code = []
     for char in string:
@@ -26,6 +27,7 @@ def encoding(string, morse):
 
 
 def valid_input(s):
+    """Check if a string contains only alphanumeric characters and spaces."""
     if all(c.isalnum() or c == " " for c in s):
         return True
     return False

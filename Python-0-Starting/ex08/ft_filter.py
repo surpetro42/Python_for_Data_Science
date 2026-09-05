@@ -10,3 +10,12 @@ def ft_filter(func, data):
         for i in data:
             if func(i):
                 yield i
+
+
+def main():
+    """Demonstrate the usage of the ft_filter function."""
+    pass
+
+
+if __name__ == "__main__":
+    main()

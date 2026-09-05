@@ -10,7 +10,7 @@ try:
                 else:
                     print("I'm Odd.")
         except ValueError:
-            raise AssertionError("AssertionError: argument is not an integer") 
+            raise AssertionError("argument is not an integer") 
     elif len(sys.argv) > 2:
         raise AssertionError("more than one argument is provided") 
 except Exception as x:
