@@ -4,6 +4,7 @@ from load_image import ft_load
 
 
 def zoom(load: np.array, size: int, channel: int):
+    """Zooms in on the selected part of the image."""
     h, w, _ = load.shape
     center_y = h // 2
     center_x = w // 2
@@ -25,6 +26,7 @@ def zoom(load: np.array, size: int, channel: int):
 
 
 def main():
+    """Loads the image and displays the zoomed part."""
     load = ft_load("animal.jpeg")
     zoom(load, size=400, channel=1)
 

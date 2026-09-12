@@ -1,7 +1,9 @@
 import numpy as np
 
+
 def valid_arg(height, weight):
-    """Validate height and weight lists and raise errors for invalid arguments."""
+    """Validate height and weight lists
+     and raise errors for invalid arguments."""
     if len(height) != len(weight):
         raise ValueError("The lists must have the same length")
     if not all(isinstance(elem, (int, float)) for elem in height + weight):
@@ -12,7 +14,9 @@ def valid_arg(height, weight):
         raise TypeError("argument type: must be a list")
     return True
 
-def give_bmi(height: list[int | float], weight: list[int | float]) -> list[int | float]:
+
+def give_bmi(height: list[int | float], weight: list[int | float]) \
+     -> list[int | float]:
     """Calculate BMI values from height and weight lists."""
     try:
         if valid_arg(height, weight):
@@ -38,7 +42,8 @@ def main():
 
     bmi = give_bmi(height, weight)
     print(bmi, type(bmi))
-    print(apply_limit(bmi, 26)) 
+    print(apply_limit(bmi, 26))
+
 
 if __name__ == "__main__":
     main()

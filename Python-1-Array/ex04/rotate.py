@@ -4,6 +4,7 @@ from load_image import ft_load
 
 
 def rotate(load: np.array, size: int, channel: int):
+    """Rotates the selected part of the image."""
     h, w, _ = load.shape
     center_y = h // 2
     center_x = w // 2
@@ -31,6 +32,7 @@ def rotate(load: np.array, size: int, channel: int):
 
 
 def main():
+    """Loads the image and rotates the selected part."""
     load = ft_load("animal.jpeg")
     rotate(load, size=400, channel=1)
 
