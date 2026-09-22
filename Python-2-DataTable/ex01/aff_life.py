@@ -4,6 +4,7 @@ from load_csv import load
 
 
 def graph(df: pd.DataFrame):
+    """Display life expectancy projections for Armenia."""
     country = df.loc["Armenia"]
     years = country.index.astype(int)
     life_expectancy = country.values
@@ -17,6 +18,7 @@ def graph(df: pd.DataFrame):
 
 
 def main():
+    """Load the life expectancy dataset and display the graph."""
     df = load("life_expectancy_years.csv")
     graph(df)
 

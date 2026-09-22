@@ -2,6 +2,7 @@ import pandas as pd
 
 
 def valid_csv(path: str) -> bool:
+    """Check if the given path is a valid CSV file."""
     if path is None:
         return False
     if not path.lower().endswith(".csv"):
@@ -10,6 +11,7 @@ def valid_csv(path: str) -> bool:
 
 
 def load(path: str) -> pd.DataFrame:
+    """Load a CSV file into a pandas DataFrame."""
     try:
         if valid_csv(path) is False:
             return None
